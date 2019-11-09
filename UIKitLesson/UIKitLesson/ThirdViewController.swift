@@ -65,7 +65,7 @@ class ThirdViewControler: UIViewController {
             let position = sender.location(in: view)
             circle.center = position
             circle.isHidden = false
-            circle.isUserInteractionEnabled = false
+//            circle.isUserInteractionEnabled = false
             let colorBot = view.getColourFromPoint(point: position, side: circle.frame.height / 2 + 1)
             let colorTop = view.getColourFromPoint(point: position, side: -circle.frame.height / 2 - 1)
             
