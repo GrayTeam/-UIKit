@@ -39,7 +39,7 @@ class SecondViewController: UIViewController {
     
     @objc private func buttonTapped() {
         let thirdViewController = ThirdViewControler()
-        navigationController?.pushViewController(thirdViewController, animated: true)
-//        delegate?.change(self)
+        thirdViewController.modalPresentationStyle = .popover
+        present(thirdViewController, animated: true, completion: nil)
     }
 }
